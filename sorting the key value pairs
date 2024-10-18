@@ -1,0 +1,11 @@
+def main():
+    num_soldiers = int(input())
+    soldiers = {}
+    for _ in range(num_soldiers):
+        serial_number = int(input())
+        name = input()
+        soldiers[serial_number] = name
+    sorted_soldiers = dict(sorted(soldiers.items()))
+    print(sorted_soldiers)
+if __name__ == "__main__":
+    main()
