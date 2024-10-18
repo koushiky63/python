@@ -1,0 +1,15 @@
+def update_dictionary():
+    keys_input = input().strip()
+    values_input = input().strip()
+    keys = keys_input.split()
+    values = values_input.split()
+    if len(keys) != len(values):
+        print("Invalid")
+        return
+    original_dict = dict(zip(keys, values))
+    new_key_value_input = input().strip()
+    new_key, new_value = new_key_value_input.split()
+    print(original_dict)
+    original_dict[new_key] = new_value
+    print(original_dict)
+update_dictionary()
