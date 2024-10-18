@@ -1,0 +1,16 @@
+def check_key_in_dictionary():
+    keys_input = input().strip()
+    values_input = input().strip()
+    keys = keys_input.split()
+    values = values_input.split()
+    if len(keys) != len(values):
+        print("Invalid")
+        return
+    dictionary = dict(zip(keys, values))
+    key_to_check = input().strip()
+    print(dictionary)
+    if key_to_check in dictionary:
+        print("Exist")
+    else:
+        print("Does not Exist")
+check_key_in_dictionary()
